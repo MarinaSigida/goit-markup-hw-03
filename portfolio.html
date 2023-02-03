@@ -9,30 +9,38 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"/>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Home</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <a class="header-logo" href="./index.html">
-                <span class="header-logo-iris">Web</span>Studio</a>
-            <ul class="menu">
-            <li><a class="menu-list-text" href="./index.html">Studio</a></li>
-            <li><a class="menu-list-text current" href="./portfolio.html">Portfolio</a></li>
-            <li><a class="menu-list-text" href="#">Contacts</a></li>
-          </ul>
-        </nav>
-            <address>
-                <ul class="address">
-                  <li><a class="address-link-text" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                  <li><a class="address-link-text" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-              </address>
-      </header>
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+    <div class="main-nav">
+    <nav class="main-nav-menu">
+      <a class="header-logo" href="./index.html"><span class="header-logo-iris">Web</span>Studio</a>
+      <ul class="menu">
+        <li><a class="menu-list-text current" href="./index.html">Studio</a></li>
+        <li><a class="menu-list-text" href="./portfolio.html">Portfolio</a></li>
+        <li><a class="menu-list-text" href="#">Contacts</a></li>
+      </ul>
+    </nav>
+    <!-- <address> -->
+      <ul class="address">
+        <li><a class="address-link-text" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="address-link-text" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      </ul>
+    <!-- </address> -->
+  </div>
+</div>
+  </header>
 
       <main>
       <section class="portfolio">
+        <div class="container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="filter">
             <li>
@@ -51,7 +59,9 @@
                 <button class="filter-button" type="button">Marketing</button>
             </li>
         </ul>
+
         <ul class="portfolio-list">
+          <div class="container-portfolio">
             <li  class="portfolio-item">
                 <a class="portfolio-link" href="#">
                 <img src="./images/bankingapp.jpg" alt="Banking app" width="360"/>
@@ -124,17 +134,22 @@
                 </a>
             </li>
         </ul>
+      </div>
+      </div>
       </section>
     </main>
 
 
-      <footer class="footer">
-        <a class="footer-logo" href="./index.html"><span class="footer-logo-iris">Web</span>Studio
-        </a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with digital marketing & growth
-          solutions.
-        </p>
-      </footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="container-footer">
+      <a class="footer-logo" href="./index.html"><span class="footer-logo-iris">Web</span>Studio</a>
+      <p class="footer-text">
+        Increase the flow of customers and sales for your business with digital
+        marketing & growth solutions.
+      </p>
+    </div>
+    </div>
+    </footer>
 </body>
 </html>
