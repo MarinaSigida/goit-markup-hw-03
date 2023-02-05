@@ -83,6 +83,9 @@ img {
     border-bottom: 1px solid var(--color_cornflower);
     padding: 24px 0 24px 0;
   }
+
+
+  
   .header-logo {
     font-family: var(--font_secondary, 'Arial', sans-serif);
     font-weight: 800;
@@ -215,12 +218,21 @@ img {
   /* Main page.  Section "Goals" */
   .goals {
     display:flex;
+    justify-content: center;
     list-style: none;
-    /* padding-left: 120px;
-    padding-right: 120px; */
-    padding: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
   }
+
+.goals-description{
+  width: 264px;
+  margin-right: 24px;
+}
+.goals-description:nth-last-child(3n){
+  margin-right: 0;
+}
+
 
   .goals-title {
     font-weight: 500;
@@ -251,14 +263,16 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color_navy-blue);
+    padding-bottom: 72px;
   }
   .services-list {
     list-style: none;
+    padding-bottom: 120px;
   }
   .service-item {
     margin-right: 24px;
   }
-  .service-item:nth-last-child(3n)){
+  .service-item:nth-last-child(3n){
     margin-right: 0;
   }
   
@@ -289,6 +303,8 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color_navy-blue);
+    padding-top: 120px;
+    padding-bottom: 72px;
   }
   .employees-list {
     list-style: none;
@@ -375,6 +391,11 @@ img {
 
 /* Page - Portfolio */
     /* Page - Portfolio - Photos */
+
+.portfolio {
+  padding-bottom: 120px;
+}
+
 .container-portfolio {
   width: 1158px; /*Ширина  контента 1128px + по 15рх с  каждой  стороны glutter/2 */
   padding-left: 15px;
@@ -389,23 +410,28 @@ img {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    /* row-gap: 48px;        */
+}
     /* margin-left: calc(-1*var(--card-set-gap);
     margin-right: calc(-1*var(--card-set-gap); */
-  }
+  
 
 /* .portfolio-list > .portfolio-item {
   flex-basis: calc(100%/3 -var(--card-set-gap); */
   /* margin-left: var(--card-set-gap);
   margin-right: var(--card-set-gap); */
-}
+
 
   .portfolio-item {
-    border: 1px solid var(--color_cornflower);
+    border-left: 1px solid var(--color_cornflower);
+    border-bottom: 1px solid var(--color_cornflower);
+    border-right: 1px solid var(--color_cornflower);
     width: 360px;
-  
-
-    /* margin-right: 24px;
-    margin-bottom: 48px; */
+    
+    margin-right: 24px;
+    margin-bottom: 48px;
+    display: flex;
+    /* flex-direction: column; */
   }
 
   .portfolio-item:nth-child(3n){
@@ -417,12 +443,14 @@ img {
   }
 
 
-.card{}
-
-
-
   .portfolio-link {
     text-decoration: none;
+  }
+
+  .portfolio-description {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
   }
 
   .portfolio-name {
