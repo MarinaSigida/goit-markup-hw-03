@@ -222,17 +222,15 @@ img {
     list-style: none;
     padding-top: 120px;
     padding-bottom: 120px;
-
   }
 
 .goals-description{
   width: 264px;
   margin-right: 24px;
 }
-.goals-description:nth-last-child(3n){
+.goals-description:nth-last-child(4n){
   margin-right: 0;
 }
-
 
   .goals-title {
     font-weight: 500;
@@ -245,6 +243,8 @@ img {
     line-height: 1.5;
   }
   
+
+
   /* Main page. Section "What are we doing" */
 .container-services {
   width: 1158px; /*Ширина  контента 1128px + по 15рх с  каждой  стороны glutter/2 */
@@ -410,8 +410,9 @@ img {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    /* row-gap: 48px;        */
 }
+
+
     /* margin-left: calc(-1*var(--card-set-gap);
     margin-right: calc(-1*var(--card-set-gap); */
   
@@ -431,7 +432,6 @@ img {
     margin-right: 24px;
     margin-bottom: 48px;
     display: flex;
-    /* flex-direction: column; */
   }
 
   .portfolio-item:nth-child(3n){
