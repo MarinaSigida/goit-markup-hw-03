@@ -40,9 +40,8 @@ h3,
 h4,
 h5,
 h6,
-p,
-{
-  margin:0;
+p {
+  margin: 0;
 }
 
 img {
@@ -58,7 +57,8 @@ button {
   border-radius: 4px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -70,22 +70,14 @@ a {
 
 .container {
   width: 1158px; /*Ширина  контента 1128px + по 15рх с  каждой  стороны glutter/2 */
-  padding: 0 15px;  
+  padding: 0 15px;
   margin: 0 auto; /*для центрирования внутри своего родителя (body)*/
 }
-
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-
-
-
-
-
-
-
 
 /* Hidden elements */
 .visually-hidden {
@@ -134,8 +126,6 @@ a {
 .header-logo-iris {
   color: var(--color_iris);
 }
-
-
 
 .menu {
   display: flex;
@@ -191,8 +181,8 @@ a {
 /* Main page */
 .main-section {
   background-color: var(--color_navy-blue);
-  text-align: center;/*Центрируем главную кнопку и героя*/
-  padding: 188px 0; 
+  text-align: center; /*Центрируем главную кнопку и героя*/
+  padding: 188px 0;
 }
 
 .main-section-title {
@@ -259,8 +249,6 @@ a {
   line-height: 1.5;
 }
 
-
-
 /* Main page. Section "What are we doing" */
 
 .services-title {
@@ -272,7 +260,7 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color_navy-blue);
-  margin-bottom:  72px;
+  margin-bottom: 72px;
 }
 
 .services-list {
@@ -319,9 +307,9 @@ a {
   margin-right: 0;
 }
 
-.employees-description{
+.employees-description {
   padding-bottom: 32px;
-  padding-top: 32px;  
+  padding-top: 32px;
 }
 
 .employees-name {
@@ -341,8 +329,6 @@ a {
   letter-spacing: 0.02em;
   margin: 0;
 }
-
-
 
 /* Page - Portfolio */
 /* Page - Portfolio - Buttons */
@@ -476,8 +462,6 @@ a {
   background-color: var(--color_navy-blue);
   padding: 100px;
 }
-
-
 
 .footer-logo {
   font-family: var(--font_secondary, "Arial", sans-serif);
