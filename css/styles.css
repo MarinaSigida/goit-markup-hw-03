@@ -20,11 +20,11 @@ html {
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 body {
   font-family: var(--font_primary, "Arial", sans-serif);
@@ -75,8 +75,7 @@ a {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 /* Hidden elements */
@@ -333,15 +332,11 @@ a {
 /* Page - Portfolio */
 /* Page - Portfolio - Buttons */
 .filter {
-  list-style: none;
   display: flex;
-  margin: auto;
   justify-content: center;
-  padding-top: 101px;
-  margin-bottom: 67px;
+  margin-bottom: 72px;
 }
 .filter-button {
-  box-sizing: border-box;
   background-color: var(--color_cloud);
   border: 1px solid var(--color_cornflower);
   border-radius: 4px;
@@ -350,12 +345,13 @@ a {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  width: 116px;
+  /* min-width: 116px; */
   height: 48px;
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
   color: var(--color_iris);
+  padding: 12px 24px;
 }
 
 .buttons {
@@ -379,6 +375,7 @@ a {
 /* Page - Portfolio - Photos */
 
 .portfolio {
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
@@ -391,11 +388,8 @@ a {
 }
 
 .portfolio-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
 }
 
 /* margin-left: calc(-1*var(--card-set-gap);
